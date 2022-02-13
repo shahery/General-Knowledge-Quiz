@@ -1,0 +1,30 @@
+/* --------- Body style */
+
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    text-align: center;
+    background-image: url(../images/bodyimage.jpg);
+    
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* -------Quiz layout */
+
+.quiz{
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 65vh;
+    border: transparent;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+}
