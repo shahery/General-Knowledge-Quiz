@@ -24,7 +24,7 @@ body {
     display: block;
     width: 80%;
     height: 80vh;
-    background-color: #7e9b39;
+    background: linear-gradient(to bottom, #00cc66 0%, #ffff99 100%);
     margin-left: auto;
     margin-right: auto;
     font-size: x-large;
@@ -32,7 +32,7 @@ body {
 }
 
 .info-area{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 #username{
@@ -51,25 +51,8 @@ body {
     margin-top: 15px;
 }
 
-.score-area{
-    margin-top: 50px;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
-}
-
-.social-media{
-    margin-top: 60px;
+.fa.fa-github-square{
+    font-size: 50px !important;
+    color: black;
+    margin-top: 70px;
 }
