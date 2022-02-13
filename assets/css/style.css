@@ -6,7 +6,8 @@ body {
     color: black;
     text-align: center;
     background-image: url(../images/bodyimage.jpg);
-    
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 /* --------- Heading */
@@ -22,9 +23,53 @@ body {
     text-align: center;
     display: block;
     width: 80%;
-    height: 65vh;
-    border: transparent;
-    background-color: aqua;
+    height: 80vh;
+    background-color: #7e9b39;
     margin-left: auto;
     margin-right: auto;
+    font-size: x-large;
+    border: 1px solid black;
+}
+
+.info-area{
+    padding-top: 50px;
+}
+
+#username{
+    height: 50px;
+    width: 200px;
+}
+
+:placeholder-shown{
+    text-align: center;
+}
+
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: lightgrey;
+    margin-top: 15px;
+}
+
+.score-area{
+    margin-top: 50px;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.social-media{
+    margin-top: 60px;
 }
