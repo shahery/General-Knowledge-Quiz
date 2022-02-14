@@ -3,14 +3,13 @@
 
 /*document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementsByTagName("button");
-    console.log("i am waleed");
+    console.log("i am shaher");
     button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "submit"){
             alert('you clicked the submit button');
         }
     });
 }*/
-console.log("hello");
 function submitUsername (event) {
     let userName = document.getElementById('username').value;
     console.log(userName);
@@ -27,12 +26,7 @@ myButton.addEventListener('click', submitUsername);
 /**
  * The main quiz "loop", called when the script is first loaded
  * and after the user's answer has been processed
- */
 
-/*let quizPlay = document.createElement('quizPlay');
-let low = document.createElement('low');
-let medium = document.createElement('medium');
-let high = document.createElement('high');
 
 function quizPlay(quizType){
 
