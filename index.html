@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>GeneralKnowldegeQuiz</title>
-</head>
-<body>
-    <br><br><br><br>
-    <div class="quiz">
-        <h1 class="heading"><i class="fas fa-globe"></i> GeneralKnowldegeQuiz</h1>
-        <div class="info-area">
-            <p>Lets test your knowledge</p>
-            <p>Add username to start quiz</p>
-            <p><i class="fas fa-arrow-alt-circle-down"></i></p>
-
-        </div>
-        <div class="input-area">
-            <input id="username" type="text" name="username" placeholder="Add Username" required>
-
-        </div>
-        <div class="submit-area">
-            <button data-type="submit" class="btn" id="my-btn">Submit</button>
-
-        </div>
-        <div>
-            <p class="social-media"> <a href="https://github.com" target="_blank" rel="noopener" aria-label="visits our github page(open in a new tab)"><i class="fa fa-github-square"></i></p>
-        </div>
-    </div>
-
-    <script src="https://kit.fontawesome.com/84ed437fb8.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <title>GeneralKnowldegeQuiz</title>
+ </head>
+ <body>
+     <section class="input-sec">
+         <div class="quiz">
+              <h1 class="heading"><i class="fas fa-globe"></i> GeneralKnowldegeQuiz</h1>
+              <div class="info-area">
+                 <p>Lets test your knowledge</p>
+                 <p>Add username to start quiz</p>
+                 <p><i class="fas fa-arrow-alt-circle-down"></i></p>
+             </div>
+             <div class="input-area">
+                 <input id="username" type="text" name="username" placeholder="Add Username" required>
+             </div>
+             <div class="submit-area">
+                 <button data-type="submit" class="btn" id="my-btn">Submit</button>
+             </div>
+             <div class="choice">
+                 <h3>Choose difficulty</h3>
+                    <p>Low</p>
+                    <p>Medium</p>
+                    <p>High</p>
+             </div>  
+             <div class="back">
+                 <button onclick="history.back()">Go Back</button>
+             </div>
+             <div>
+                 <p class="social-media"> <a href="https://github.com" target="_blank" rel="noopener" aria-label="visits our github page(open in a new tab)"><i class="fa fa-github-square"></i></p>
+             </div>
+         </div>
+     </section>
+     <script src="https://kit.fontawesome.com/84ed437fb8.js" crossorigin="anonymous"></script>
+     <script src="assets/js/script.js"></script>
+ </body>
 </html>

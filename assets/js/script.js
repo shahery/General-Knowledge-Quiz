@@ -13,7 +13,7 @@
 function submitUsername (event) {
     let userName = document.getElementById('username').value;
     console.log(userName);
-    window.location.href = "select_level.html";
+    
 
     /*let node = document.getElementsByClassName('test');
     node.innerHTML= userName;

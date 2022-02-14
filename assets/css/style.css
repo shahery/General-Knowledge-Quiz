@@ -29,6 +29,8 @@ body {
     margin-right: auto;
     font-size: x-large;
     border: 1px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .info-area{
@@ -49,6 +51,14 @@ body {
     width: 100px;
     background-color: lightgrey;
     margin-top: 15px;
+}
+
+.choice{
+    display: none;
+}
+
+.back{
+    display: none;
 }
 
 .fa.fa-github-square{
