@@ -1,15 +1,7 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button element and add event listener to it.
 
-/*document.addEventListener("DOMContentLoaded", function() {
-    let button = document.getElementsByTagName("button");
-    console.log("i am shaher");
-    button.addEventListener("click", function() {
-        if (this.getAttribute("data-type") === "submit"){
-            alert('you clicked the submit button');
-        }
-    });
-}*/
+let userName = "";
 function submitUsername (event) {
     let node = document.getElementsByClassName('info-area');
     for (var i=0;i<node.length;i+=1){
@@ -23,27 +15,45 @@ function submitUsername (event) {
     for (var i=0;i<node3.length;i+=1){
         node3[i].style.display = 'none';
     }
-    let userName = document.getElementById('username').value;
+    userName = document.getElementById('username').value;
     console.log(userName);
 
     let section = document.getElementById("select-level");
-    section.innerHTML=`<section class='select-level'>
-    <form>
-        <p>Please select your level</p>
-        <input type="radio" id="beginner" name="level" value="beginner">
-        <label for="beginner">Beginner</label><br>
-        <input type="radio" id="intermediate" name="level" value="intermediate">
-        <label for="intermediate">Intermediate</label><br>
-        <input type="radio" id="advanced" name="level" value="advanced">
-        <label for="advanced">Advanced</label><br><br>
-        <input type="submit" value="Submit">
-      </form>
-    </section>`;
-    console.log(section);
-    section.style.backgroundColor=red;
+    section.style.display='block';
+
+    let usernameText = document.getElementById('welcome-username');
+    usernameText.innerHTML="Welcome "+ userName;
+
 }
+
 let myButton = document.getElementById('my-btn');
 myButton.addEventListener('click', submitUsername);
+
+let level;
+function selectLevel (event) {
+    let node = document.getElementById('select-level');
+    node.style.display='none';
+    level = document.querySelector('input[name="level"]:checked').value;
+    showLevel();
+    console.log(level);
+}
+
+let myButton2 = document.getElementById('my-level-btn');
+myButton2.addEventListener('click', selectLevel);
+
+function showLevel(){
+    if(level=="beginner"){
+        
+    }
+    else if(level=="intermediate"){
+
+    }
+    else if(level=="advanced"){
+
+    }
+}
+
+
 
 
 /**
