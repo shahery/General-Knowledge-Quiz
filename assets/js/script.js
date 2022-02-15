@@ -11,13 +11,36 @@
     });
 }*/
 function submitUsername (event) {
+    let node = document.getElementsByClassName('info-area');
+    for (var i=0;i<node.length;i+=1){
+        node[i].style.display = 'none';
+    }
+    let node2 = document.getElementsByClassName('input-area');
+    for (var i=0;i<node2.length;i+=1){
+        node2[i].style.display = 'none';
+    }
+    let node3 = document.getElementsByClassName('submit-area');
+    for (var i=0;i<node3.length;i+=1){
+        node3[i].style.display = 'none';
+    }
     let userName = document.getElementById('username').value;
     console.log(userName);
-    
 
-    /*let node = document.getElementsByClassName('test');
-    node.innerHTML= userName;
-    console.log(userName);*/
+    let section = document.getElementById("select-level");
+    section.innerHTML=`<section class='select-level'>
+    <form>
+        <p>Please select your level</p>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="advanced" name="level" value="advanced">
+        <label for="advanced">Advanced</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>`;
+    console.log(section);
+    section.style.backgroundColor=red;
 }
 let myButton = document.getElementById('my-btn');
 myButton.addEventListener('click', submitUsername);
