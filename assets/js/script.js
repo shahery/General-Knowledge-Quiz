@@ -43,15 +43,29 @@ myButton2.addEventListener('click', selectLevel);
 
 function showLevel(){
     if(level=="beginner"){
-        
+        let node = document.getElementById('beginner-questions');
+        node.style.display='block';
+        console.log(node);
     }
     else if(level=="intermediate"){
+        let node = document.getElementById('intermediate-questions');
+        node.style.display='block';
+        console.log(node);
 
     }
     else if(level=="advanced"){
+        let node = document.getElementById('advanced-questions');
+        node.style.display='block';
+        console.log(node);
 
     }
 }
+/*let myButton3 = document.getElementById('beginner-question-btn');
+myButton3.addEventListener('click', );
+let myButton4 = document.getElementById('intermediate-question-btn');
+myButton4.addEventListener('click', );
+let myButton5 = document.getElementById('advanced-question-btn');
+myButton5.addEventListener('click', );*/
 
 
 

@@ -71,3 +71,16 @@ body {
 #select-level{
     display: none;
 }
+
+
+
+#beginner-questions{
+    display: none;
+}
+
+#intermediate-questions{
+display: none;
+}
+#advanced-questions{
+display: none;
+}
