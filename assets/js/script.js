@@ -109,56 +109,32 @@ const beginnerAnswers = ["Islamabad","Mercury"];
 const intermediateAnswers = ["Islamabad","Mercury"];
 const advancedAnswers = ["Islamabad","Mercury"];
 
-function showResult(){
-    for (let index = 0; index < beginnerAnswers.length; index++) {
-        if(beginnerAnswers[index]==userAnswers[index])
-            console.log();
-        else
-            console.log("Correct answer is "+beginnerAnswers[index]);
-    }
-    
-
-
-    
-
-}
-
-
-
-/** 
-function nextQuestion(){
-
-}
-
-let myButton3 = document.getElementById('beginner-question-btn');
-myButton3.addEventListener('click',checkAnswer);
-let myButton4 = document.getElementById('intermediate-question-btn');
-myButton4.addEventListener('click',checkAnswer);
-let myButton5 = document.getElementById('advanced-question-btn');
-myButton5.addEventListener('click',checkAnswer);
-
 /**
  * Checks the answer agaist the first element in
  * the returned calculateCorrectAnswer array
+ * */
 
-
- function checkAnswer(){
-
-    if (isCorrect) {
-        alert("Hey! You got it right! :D");
-        incrementScore();
-    } else {
-        alert(`Awwww.... you answered ${userAnswer}. The correct answer was ${}!`);
-        incrementWrongAnswer();
+function showResult(){
+    let equal = true;
+    let countError = 0;
+    const mistakes = [];
+    const correctAnswer = [];
+    for (let index = 0; index < beginnerAnswers.length; index++) {
+        if(beginnerAnswers[index]!=userAnswers[index]){
+            countError++;
+            mistakes[index]= userAnswers[index];
+            correctAnswer[index] = beginnerAnswers[index]
+            equal = false;
+        }
     }
-
-    runQuiz();
-
-}
-
-function CorrectAnswers(){
-    document.getElementsByClassName('questions');
-    document.getElementsByClassName('beginner-question')
+    if(equal){
+        alert("Hey! You got it right! :D");
+    }
+    else{
+        for(let i = 0; i < countError; i++)
+            alert(`Awwww.... you answered +${mistakes[i]}. The correct answer was ${correctAnswer[i]}!`);
+    }
+    
 
 }
 
