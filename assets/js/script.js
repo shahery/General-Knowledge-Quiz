@@ -46,6 +46,9 @@ myButton2.addEventListener('click', selectLevel);
 let score=0;
 
 function showLevel(){
+    let box = document.getElementsByClassName('quiz')[0];
+    box.style.height = '170vh';
+   
     if(level=="beginner"){
         let node = document.getElementById('beginner-question');
         node.style.display = 'block';
@@ -64,9 +67,16 @@ function showLevel(){
     }
 }
 
+/**
+ * submitAnswers for beginner,intermediate and advanced questions.
+ */
+
 const userAnswers=[];
 
 function submitAnswer (event) {
+    let box = document.getElementsByClassName('quiz')[0];
+    box.style.height = '80vh';
+
     if(level=='beginner'){
         let node = document.getElementById('beginner-question');
         node.style.display='none';
