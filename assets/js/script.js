@@ -43,7 +43,6 @@ function selectLevel (event) {
 let myButton2 = document.getElementById('my-level-btn');
 myButton2.addEventListener('click', selectLevel);
 
-let score=0;
 
 function showLevel(){
     let box = document.getElementsByClassName('quiz')[0];
@@ -52,12 +51,14 @@ function showLevel(){
     if(level=="beginner"){
         let node = document.getElementById('beginner-question');
         node.style.display = 'block';
+        
+
     }
     else if(level=="intermediate"){
         let node = document.getElementById('intermediate-questions');
         node.style.display='block';
         console.log(node);
-
+        
     }
     else if(level=="advanced"){
         let node = document.getElementById('advanced-questions');
@@ -82,25 +83,44 @@ function submitAnswer (event) {
         node.style.display='none';
         userAnswers[0]=(document.querySelector('input[name="capital"]:checked').value);
         userAnswers[1]=(document.querySelector('input[name="planet"]:checked').value);
+        userAnswers[2]=(document.querySelector('input[name="currency"]:checked').value);
+        userAnswers[3]=(document.querySelector('input[name="symbol"]:checked').value);
+        userAnswers[4]=(document.querySelector('input[name="president"]:checked').value);
+        
+        
         for (let index = 0; index < userAnswers.length; index++) {
             console.log(userAnswers[index]);        
         }
+       
     }
     if(level=='intermediate'){
         let node = document.getElementById('intermediate-questions');
         node.style.display='none';
-        answer[0]=(document.querySelector('input[name="drink"]:checked').value);
-        for (let index = 0; index < answer.length; index++) {
-            console.log(answer[index]);        
+        userAnswers[0]=(document.querySelector('input[name="drink"]:checked').value);
+        userAnswers[1]=(document.querySelector('input[name="players"]:checked').value);
+        userAnswers[2]=(document.querySelector('input[name="times"]:checked').value);
+        userAnswers[3]=(document.querySelector('input[name="girl"]:checked').value);
+        userAnswers[4]=(document.querySelector('input[name="city"]:checked').value);
+
+
+        for (let index = 0; index < userAnswers.length; index++) {
+            console.log(userAnswers[index]);        
         }
+       
     }
     if(level=='advanced'){
         let node = document.getElementById('advanced-questions');
         node.style.display='none';
-        answer[0]=(document.querySelector('input[name="zone"]:checked').value);
-        for (let index = 0; index < answer.length; index++) {
-            console.log(answer[index]);        
+        userAnswers[0]=(document.querySelector('input[name="zone"]:checked').value);
+        userAnswers[1]=(document.querySelector('input[name="body-part"]:checked').value);
+        userAnswers[2]=(document.querySelector('input[name="State"]:checked').value);
+        userAnswers[3]=(document.querySelector('input[name="country"]:checked').value);
+        userAnswers[4]=(document.querySelector('input[name="game"]:checked').value);
+
+        for (let index = 0; index < userAnswers.length; index++) {
+            console.log(userAnswers[index]);        
         }
+        
     }
     showResult();
 }
@@ -110,14 +130,13 @@ myButton3.addEventListener('click', submitAnswer);
 
 let myButton4 = document.getElementById('intermediate-question-btn');
 myButton4.addEventListener('click', submitAnswer);
-console.log(level);
 
 let myButton5 = document.getElementById('advanced-question-btn');
 myButton5.addEventListener('click', submitAnswer);
 
-const beginnerAnswers = ["Islamabad","Mercury"];
-const intermediateAnswers = ["Islamabad","Mercury"];
-const advancedAnswers = ["Islamabad","Mercury"];
+const beginnerAnswers = ["Islamabad","Mercury","Krone","Tin","Joe Biden"];
+const intermediateAnswers = ["Irn-Bru","Four","Once","Olivia","Constantinople"];
+const advancedAnswers = ["Four","Knee","Tennessee","China","Call of Duty"];
 
 /**
  * Checks the answer agaist the first element in
@@ -125,50 +144,65 @@ const advancedAnswers = ["Islamabad","Mercury"];
  * */
 
 function showResult(){
+
+
     let equal = true;
     let countError = 0;
+    let div= document.getElementById('mistakes-list');
+    let text="";
     const mistakes = [];
     const correctAnswer = [];
-    for (let index = 0; index < beginnerAnswers.length; index++) {
-        if(beginnerAnswers[index]!=userAnswers[index]){
-            countError++;
-            mistakes[index]= userAnswers[index];
-            correctAnswer[index] = beginnerAnswers[index]
+    if(level == "beginner")
+        for (let index = 0; index < beginnerAnswers.length; index++) {
+            if(beginnerAnswers[index]!=userAnswers[index]){
+                mistakes[countError] = userAnswers[index];
+                correctAnswer[index] = beginnerAnswers[index];
+                text += 'Awwww.... you answered '+mistakes[countError]+'. The correct answer was '+correctAnswer[index]+'!<br>';
+                equal = false;
+                countError++;
+            }
+        }
+    if(level == "intermediate")
+    for (let index = 0; index < intermediateAnswers.length; index++) {
+        if(intermediateAnswers[index]!=userAnswers[index]){
+            mistakes[countError] = userAnswers[index];
+            correctAnswer[index] = intermediateAnswers[index];
+            text += 'Awwww.... you answered '+mistakes[countError]+'. The correct answer was '+correctAnswer[index]+'!<br>';
             equal = false;
+            countError++;
         }
     }
-    if(equal){
-        alert("Hey! You got it right! :D");
+    if(level == "advanced")
+    for (let index = 0; index < advancedAnswers.length; index++) {
+        if(advancedAnswers[index]!=userAnswers[index]){
+            mistakes[countError] = userAnswers[index];
+            correctAnswer[index] = advancedAnswers[index];
+            text += 'Awwww.... you answered '+mistakes[countError]+'. The correct answer was '+correctAnswer[index]+'!<br>';
+            equal = false;
+            countError++;
+        }
     }
-    else{
-        for(let i = 0; i < countError; i++)
-            alert(`Awwww.... you answered +${mistakes[i]}. The correct answer was ${correctAnswer[i]}!`);
+
+
+    let scoreArea = document.getElementsByClassName('score-area');
+    for (let index = 0; index < scoreArea.length; index++) 
+        scoreArea[index].style.display='block';
+    let score = document.getElementById("score");
+    score.style.display='block';
+    score.innerHTML= 5-countError;
+    let incorrect = document.getElementById("incorrect");    
+    incorrect.style.display='block';
+    incorrect.innerHTML= countError;
+    console.log(countError);
+    
+    if(!equal){
+        div.innerHTML= text;
     }
+
+
+
+        
     
 
 }
 
-/**
- * Gets the current score from the DOM and increments it by 1
-
-
-let scoreArea=document.getElementsByClassName('scoreArea');
-let document.getElementById("score");
-let document.getElementById("incorrect");    
-
-function incrementScore(){
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
-}
-
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
-
-
-function incrementWrongAnswer(){
-
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-
-}*/
