@@ -42,14 +42,13 @@ function selectLevel (event) {
 
 let myButton2 = document.getElementById('my-level-btn');
 myButton2.addEventListener('click', selectLevel);
+
 let score=0;
 
 function showLevel(){
     if(level=="beginner"){
         let node = document.getElementById('beginner-question');
-        node[0].style.display = 'block';
-        }
-
+        node.style.display = 'block';
     }
     else if(level=="intermediate"){
         let node = document.getElementById('intermediate-questions');
@@ -64,6 +63,68 @@ function showLevel(){
 
     }
 }
+
+const userAnswers=[];
+
+function submitAnswer (event) {
+    if(level=='beginner'){
+        let node = document.getElementById('beginner-question');
+        node.style.display='none';
+        userAnswers[0]=(document.querySelector('input[name="capital"]:checked').value);
+        userAnswers[1]=(document.querySelector('input[name="planet"]:checked').value);
+        for (let index = 0; index < userAnswers.length; index++) {
+            console.log(userAnswers[index]);        
+        }
+    }
+    if(level=='intermediate'){
+        let node = document.getElementById('intermediate-questions');
+        node.style.display='none';
+        answer[0]=(document.querySelector('input[name="drink"]:checked').value);
+        for (let index = 0; index < answer.length; index++) {
+            console.log(answer[index]);        
+        }
+    }
+    if(level=='advanced'){
+        let node = document.getElementById('advanced-questions');
+        node.style.display='none';
+        answer[0]=(document.querySelector('input[name="zone"]:checked').value);
+        for (let index = 0; index < answer.length; index++) {
+            console.log(answer[index]);        
+        }
+    }
+    showResult();
+}
+
+let myButton3 = document.getElementById('beginner-question-btn');
+myButton3.addEventListener('click', submitAnswer);
+
+let myButton4 = document.getElementById('intermediate-question-btn');
+myButton4.addEventListener('click', submitAnswer);
+console.log(level);
+
+let myButton5 = document.getElementById('advanced-question-btn');
+myButton5.addEventListener('click', submitAnswer);
+
+const beginnerAnswers = ["Islamabad","Mercury"];
+const intermediateAnswers = ["Islamabad","Mercury"];
+const advancedAnswers = ["Islamabad","Mercury"];
+
+function showResult(){
+    for (let index = 0; index < beginnerAnswers.length; index++) {
+        if(beginnerAnswers[index]==userAnswers[index])
+            console.log();
+        else
+            console.log("Correct answer is "+beginnerAnswers[index]);
+    }
+    
+
+
+    
+
+}
+
+
+
 /** 
 function nextQuestion(){
 
