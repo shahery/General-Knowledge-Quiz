@@ -65,7 +65,6 @@ body {
 .fa.fa-github-square{
     font-size: 50px !important;
     color: black;
-    margin-top: 70px;
 }
 
 #select-level{
@@ -74,13 +73,36 @@ body {
 
 
 
-#beginner-questions{
+#beginner-question{
     display: none;
 }
 
 #intermediate-questions{
 display: none;
 }
+
 #advanced-questions{
 display: none;
+}
+
+.score-area {
+    margin: 7px auto;
+    width: 60%;
+    font-size: 1.3rem;
+    display: none;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.scores {
+    display: inline-block;
+    padding: 30px;
 }

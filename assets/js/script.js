@@ -1,6 +1,3 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button element and add event listener to it.
-
 let userName = "";
 function submitUsername (event) {
     let node = document.getElementsByClassName('info-area');
@@ -29,6 +26,11 @@ function submitUsername (event) {
 let myButton = document.getElementById('my-btn');
 myButton.addEventListener('click', submitUsername);
 
+/**
+ * The main quiz "loop", called when the script is first loaded
+ * and after the user's answer has been processed
+ **/
+
 let level;
 function selectLevel (event) {
     let node = document.getElementById('select-level');
@@ -40,12 +42,14 @@ function selectLevel (event) {
 
 let myButton2 = document.getElementById('my-level-btn');
 myButton2.addEventListener('click', selectLevel);
+let score=0;
 
 function showLevel(){
     if(level=="beginner"){
-        let node = document.getElementById('beginner-questions');
-        node.style.display='block';
-        console.log(node);
+        let node = document.getElementById('beginner-question');
+        node[0].style.display = 'block';
+        }
+
     }
     else if(level=="intermediate"){
         let node = document.getElementById('intermediate-questions');
@@ -60,40 +64,22 @@ function showLevel(){
 
     }
 }
-/*let myButton3 = document.getElementById('beginner-question-btn');
-myButton3.addEventListener('click', );
-let myButton4 = document.getElementById('intermediate-question-btn');
-myButton4.addEventListener('click', );
-let myButton5 = document.getElementById('advanced-question-btn');
-myButton5.addEventListener('click', );*/
+/** 
+function nextQuestion(){
 
-
-
-
-/**
- * The main quiz "loop", called when the script is first loaded
- * and after the user's answer has been processed
-
-
-function quizPlay(quizType){
-
-    if (quizType === "low") {
-        displayLowQuestions();
-    } else if (quizType === "medium") {
-        displayMediumQuestions();
-    } else if (quizType === "high" ) {
-           displayHighQuestions();
-    } else {
-        alert(`Unknown quiz type: ${quizType}`);
-        throw `Unknown quiz type: ${quizType}. Aborting!`;
-    }
 }
 
+let myButton3 = document.getElementById('beginner-question-btn');
+myButton3.addEventListener('click',checkAnswer);
+let myButton4 = document.getElementById('intermediate-question-btn');
+myButton4.addEventListener('click',checkAnswer);
+let myButton5 = document.getElementById('advanced-question-btn');
+myButton5.addEventListener('click',checkAnswer);
 
 /**
  * Checks the answer agaist the first element in
  * the returned calculateCorrectAnswer array
- 
+
 
  function checkAnswer(){
 
@@ -110,17 +96,16 @@ function quizPlay(quizType){
 }
 
 function CorrectAnswers(){
+    document.getElementsByClassName('questions');
+    document.getElementsByClassName('beginner-question')
 
 }
 
 /**
  * Gets the current score from the DOM and increments it by 1
- 
 
-let scoreArea=document.createElement('scoreArea');
-let html=`<p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>`;
-        scoreArea.innerHTML=html;
+
+let scoreArea=document.getElementsByClassName('scoreArea');
 let document.getElementById("score");
 let document.getElementById("incorrect");    
 
@@ -132,20 +117,11 @@ function incrementScore(){
 
 /**
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
- 
+
 
 function incrementWrongAnswer(){
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 
-}
-
-function displayLowQuestions(){
-}
-
-function displayMediumQuestions(){
-}
-
-function displayHighQuestions(){
 }*/
