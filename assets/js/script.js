@@ -1,3 +1,8 @@
+/**
+ * submitUsername function with the 
+ * welcome Username message
+ */
+
 let userName = "";
 function submitUsername (event) {
     let node = document.getElementsByClassName('info-area');
@@ -139,9 +144,9 @@ const intermediateAnswers = ["Irn-Bru","Four","Once","Olivia","Constantinople"];
 const advancedAnswers = ["Four","Knee","Tennessee","China","Call of Duty"];
 
 /**
- * Checks the answer agaist the first element in
+ * Checks the answer compare to userAnswer in
  * the returned calculateCorrectAnswer array
- * */
+* */
 
 function showResult(){
 
@@ -199,10 +204,11 @@ function showResult(){
         div.innerHTML= text;
     }
 
-
-
-        
-    
+    let backButton=document.getElementById("back");
+    back.innerHTML=backButton;
+    backButton.style.display="block";
+    console.log(backButton);
+    backButton.addEventListener('click',back);
 
 }
 
