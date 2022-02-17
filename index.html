@@ -17,7 +17,7 @@
                  <p><i class="fas fa-arrow-alt-circle-down"></i></p>
               </div>
               <div class="input-area">
-                 <input id="username" required type="text" name="username" placeholder="Add Username" >
+                 <input id="username" type="text" name="username" placeholder="Add Username" required="required">
               </div>
               <div class="submit-area">
                  <button data-type="submit" class="btn" id="my-btn">Submit</button>
@@ -30,11 +30,11 @@
               </div>
               <section id = "select-level">
                  <p id="welcome-username"></p><p>Please select your level</p>
-                 <input type="radio" required id="beginner" name="level" value="beginner">
+                 <input type="radio" id="beginner" name="level" value="beginner">
                  <label for="beginner">Beginner</label><br>
-                 <input type="radio" required id="intermediate" name="level" value="intermediate">
+                 <input type="radio" id="intermediate" name="level" value="intermediate">
                  <label for="intermediate">Intermediate</label><br>
-                 <input type="radio" required id="advanced" name="level" value="advanced">
+                 <input type="radio" id="advanced" name="level" value="advanced">
                  <label for="advanced">Advanced</label><br><br>
                  <div class="submit-area1">
                      <button data-type="submit" class="btn1" id="my-level-btn">Submit</button>
@@ -42,16 +42,16 @@
              </section> 
              <section class="questions">
                  <div id="beginner-question">
-                     <p>What is the capital of Pakistan?</p>
-                     <input type="radio" id="islamabad" name="capital" value="Islamabad">
+                     <p><i class="far fa-hand-point-right"></i> What is the capital of Pakistan?</p>
+                     <input type="radio" id="islamabad" name="capital" value="Islamabad" required="required">
                      <label for="islamabad">Islambad</label><br>
-                     <input type="radio" id="lahore" name="capital" value="Lahore">
+                     <input type="radio" id="lahore" name="capital" value="Lahore" required="required">
                      <label for="lahore">Lahore</label><br>
-                     <input type="radio" id="karachi" name="capital" value="Karachi">
+                     <input type="radio" id="karachi" name="capital" value="Karachi" required="required">
                      <label for="karachi">Karachi</label><br>
-                     <input type="radio" id="multan" name="capital" value="Multan">
+                     <input type="radio" id="multan" name="capital" value="Multan" required="required">
                      <label for="multan">Multan</label><br><br>
-                     <p>What is the smallest planet in our solar system?</p>
+                     <p><i class="far fa-hand-point-right"></i> What is the smallest planet in our solar system?</p>
                      <input type="radio" id="pluto" name="planet" value="Pluto">
                      <label for="pluto">Pluto</label><br>
                      <input type="radio" id="mars" name="planet" value="Mars">
@@ -60,7 +60,7 @@
                      <label for="mercury">Mercury</label><br>
                      <input type="radio" id="earth" name="planet" value="Earth">
                      <label for="earth">Earth</label><br><br>
-                     <p>What is the currency of Denmark?</p>
+                     <p><i class="far fa-hand-point-right"></i> What is the currency of Denmark?</p>
                      <input type="radio" id="dollar" name="currency" value="Dollar">
                      <label for="dollar">Dollar</label><br>
                      <input type="radio" id="euro" name="currency" value="Euro">
@@ -69,7 +69,7 @@
                      <label for="pound">Pound</label><br>
                      <input type="radio" id="krone" name="currency" value="Krone">
                      <label for="krone">Krone</label><br><br>
-                     <p>What element is denoted by the chemical symbol Sn in the periodic table?</p>
+                     <p><i class="far fa-hand-point-right"></i> What element is denoted by the chemical symbol Sn in the periodic table?</p>
                      <input type="radio" id="gold" name="symbol" value="Gold">
                      <label for="gold">Gold</label><br>
                      <input type="radio" id="silver" name="symbol" value="Silver">
@@ -78,7 +78,7 @@
                      <label for="tin">Tin</label><br>
                      <input type="radio" id="zinc" name="symbol" value="Zinc">
                      <label for="zinc">Zinc</label><br><br>
-                     <p>Who is the president of the United States?</p>
+                     <p><i class="far fa-hand-point-right"></i> Who is the president of the United States?</p>
                      <input type="radio" id="imran khan" name="president" value="Imran Khan">
                      <label for="imran khan">Imran Khan</label><br>
                      <input type="radio" id="joe biden" name="president" value="Joe Biden">
@@ -92,7 +92,7 @@
                      </div>
                  </div>
                  <div id="intermediate-questions">
-                     <p>Which soft drink is commonly associated with Scotland?</p>
+                     <p><i class="far fa-hand-point-right"></i> Which soft drink is commonly associated with Scotland?</p>
                      <input type="radio" id="coca-cola" name="drink" value="Coca-Cola">
                      <label for="coca-cola">Coca-Cola</label><br>
                      <input type="radio" id="irn-bru" name="drink" value="Irn-Bru">
@@ -101,7 +101,7 @@
                      <label for="wine">Wine</label><br>
                      <input type="radio" id="oasis" name="drink" value="Oasis">
                      <label for="oasis">Oasis</label><br><br>
-                     <p>How many human players are there on each side in a polo match?</p>
+                     <p><i class="far fa-hand-point-right"></i> How many human players are there on each side in a polo match?</p>
                      <input type="radio" id="one" name="players" value="One">
                      <label for="one">One</label><br>
                      <input type="radio" id="two" name="players" value="Two">
@@ -110,7 +110,7 @@
                      <label for="three">Three</label><br>
                      <input type="radio" id="four" name="players" value="Four">
                      <label for="four">Four</label><br><br>
-                     <p>How many times has England won the men's football World Cup?</p>
+                     <p><i class="far fa-hand-point-right"></i> How many times has England won the men's football World Cup?</p>
                      <input type="radio" id="once" name="times" value="Once">
                      <label for="once">Once</label><br>
                      <input type="radio" id="twice" name="times" value="Twice">
@@ -119,7 +119,7 @@
                      <label for="thrice">Thrice</label><br>
                      <input type="radio" id="four-times" name="times" value="Four-Times">
                      <label for="four-times">Four-Times</label><br><br>
-                     <p>What was the most popular girls name in the UK in 2019?</p>
+                     <p><i class="far fa-hand-point-right"></i> What was the most popular girls name in the UK in 2019?</p>
                      <input type="radio" id="olivia" name="girl" value="Olivia">
                      <label for="olivia">Olivia</label><br>
                      <input type="radio" id="ava" name="girl" value="Ava">
@@ -128,7 +128,7 @@
                      <label for="emma">Emma</label><br>
                      <input type="radio" id="sophia" name="girl" value="Sophia">
                      <label for="sophia">Sophia</label><br><br>
-                     <p>What was the Turkish city of Istanbul called before 1930? </p>
+                     <p><i class="far fa-hand-point-right"></i> What was the Turkish city of Istanbul called before 1930? </p>
                      <input type="radio" id="bursa" name="city" value="Bursa">
                      <label for="bursa">Bursa</label><br>
                      <input type="radio" id="constantinople" name="city" value="Constantinople">
@@ -142,7 +142,7 @@
                      </div>
                  </div>
                  <div id="advanced-questions">
-                     <p>How many time zones in Continental United States?</p>
+                     <p><i class="far fa-hand-point-right"></i> How many time zones in Continental United States?</p>
                      <input type="radio" id="one" name="zone" value="One">
                      <label for="one">One</label><br>
                      <input type="radio" id="two" name="zone" value="Two">
@@ -151,7 +151,7 @@
                      <label for="three">Three</label><br>
                      <input type="radio" id="four" name="zone" value="Four">
                      <label for="four">Four</label><br><br>
-                     <p>In which part of your body would you find the cruciate ligament?</p>
+                     <p><i class="far fa-hand-point-right"></i> In which part of your body would you find the cruciate ligament?</p>
                      <input type="radio" id="knee" name="body-part" value="Knee">
                      <label for="knee">Knee</label><br>
                      <input type="radio" id="elbow" name="body-part" value="Elbow">
@@ -160,7 +160,7 @@
                      <label for="brain">Brain</label><br>
                      <input type="radio" id="feet" name="body-part" value="Feet">
                      <label for="feet">Feet</label><br><br>
-                     <p>In what US State is the city Nashville? </p>
+                     <p><i class="far fa-hand-point-right"></i> In what US State is the city Nashville? </p>
                      <input type="radio" id="alabama" name="State" value="Alabama">
                      <label for="alabama">Alabama</label><br>
                      <input type="radio" id="california" name="State" value="California">
@@ -169,7 +169,7 @@
                      <label for="tennessee">Tennessee</label><br>
                      <input type="radio" id="alaska" name="State" value="Alaska">
                      <label for="alaska">Alaska</label><br><br>
-                     <p>Which country in the world is believed to have the most miles of motorway?</p>
+                     <p><i class="far fa-hand-point-right"></i> Which country in the world is believed to have the most miles of motorway?</p>
                      <input type="radio" id="pakistan" name="country" value="Pakistan">
                      <label for="pakistan">Pakistan</label><br>
                      <input type="radio" id="china" name="country" value="China">
@@ -178,7 +178,7 @@
                      <label for="russia">Russia</label><br>
                      <input type="radio" id="usa" name="country" value="Usa">
                      <label for="usa">Usa</label><br><br>
-                     <p>Which popular video game franchise has released games with the subtitles World At War and Black Ops?</p>
+                     <p><i class="far fa-hand-point-right"></i> Which popular video game franchise has released games with the subtitles World At War and Black Ops?</p>
                      <input type="radio" id="world of Tanks" name="game" value="World of Tanks">
                      <label for="world of Tanks">World of Tanks</label><br>
                      <input type="radio" id="the Legend of Mir 3" name="game" value="The Legend of Mir 3">

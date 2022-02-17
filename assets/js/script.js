@@ -212,3 +212,7 @@ function showResult(){
 
 }
 
+/**
+ * Adding required attributes for all the inputs
+ */
+
