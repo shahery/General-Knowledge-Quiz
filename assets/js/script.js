@@ -6,15 +6,15 @@
 let userName = "";
 function submitUsername (event) {
     let node = document.getElementsByClassName('info-area');
-    for (var i=0;i<node.length;i+=1){
+    for (var i=0;i<node.length;i++){
         node[i].style.display = 'none';
     }
     let node2 = document.getElementsByClassName('input-area');
-    for (var i=0;i<node2.length;i+=1){
+    for (var i=0;i<node2.length;i++){
         node2[i].style.display = 'none';
     }
     let node3 = document.getElementsByClassName('submit-area');
-    for (var i=0;i<node3.length;i+=1){
+    for (var i=0;i<node3.length;i++){
         node3[i].style.display = 'none';
     }
     userName = document.getElementById('username').value;

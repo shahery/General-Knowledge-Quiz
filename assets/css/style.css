@@ -71,7 +71,7 @@ body {
     display: none;
 }
 
-
+/*-----Questions Area */
 
 #beginner-question{
     display: none;
@@ -84,6 +84,8 @@ display: none;
 #advanced-questions{
 display: none;
 }
+
+/*----- score area */
 
 .score-area {
     margin: 7px auto;

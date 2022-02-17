@@ -10,203 +10,203 @@
  <body>
      <section class="input-sec">
          <div class="quiz">
-            <h1 class="heading"><i class="fas fa-globe"></i> GeneralKnowledgeQuiz</h1>
-            <div class="info-area">
-                <p>Lets test your knowledge</p>
-                <p>Add username to start quiz</p>
-                <p><i class="fas fa-arrow-alt-circle-down"></i></p>
-            </div>
-            <div class="input-area">
-                <input id="username" required type="text" name="username" placeholder="Add Username" >
-            </div>
-            <div class="submit-area">
-                <button data-type="submit" class="btn" id="my-btn">Submit</button>
-            </div>
-            <div class="choice">
-                <h3>Choose difficulty</h3>
-                <p>Low</p>
-                <p>Medium</p>
-                <p>High</p>
-            </div>
-            <section id = "select-level">
-                <p id="welcome-username"></p><p>Please select your level</p>
-                <input type="radio" required id="beginner" name="level" value="beginner">
-                <label for="beginner">Beginner</label><br>
-                <input type="radio" required id="intermediate" name="level" value="intermediate">
-                <label for="intermediate">Intermediate</label><br>
-                <input type="radio" required id="advanced" name="level" value="advanced">
-                <label for="advanced">Advanced</label><br><br>
-                <div class="submit-area1">
-                    <button data-type="submit" class="btn1" id="my-level-btn">Submit</button>
-                </div>
-            </section> 
-            <section class="questions">
-                <div id="beginner-question">
-                    <p>What is the capital of Pakistan?</p>
-                    <input type="radio" required id="islamabad" name="capital" value="Islamabad">
-                    <label for="islamabad">Islambad</label><br>
-                    <input type="radio" required id="lahore" name="capital" value="Lahore">
-                    <label for="lahore">Lahore</label><br>
-                    <input type="radio" required id="karachi" name="capital" value="Karachi">
-                    <label for="karachi">Karachi</label><br>
-                    <input type="radio" required id="multan" name="capital" value="Multan">
-                    <label for="multan">Multan</label><br><br>
-                    <p>What is the smallest planet in our solar system?</p>
-                    <input type="radio" required id="pluto" name="planet" value="Pluto">
-                    <label for="pluto">Pluto</label><br>
-                    <input type="radio" required id="mars" name="planet" value="Mars">
-                    <label for="mars">Mars</label><br>
-                    <input type="radio" required id="mercury" name="planet" value="Mercury">
-                    <label for="mercury">Mercury</label><br>
-                    <input type="radio" required id="earth" name="planet" value="Earth">
-                    <label for="earth">Earth</label><br><br>
-                    <p>What is the currency of Denmark?</p>
-                    <input type="radio" required id="dollar" name="currency" value="Dollar">
-                    <label for="dollar">Dollar</label><br>
-                    <input type="radio" required id="euro" name="currency" value="Euro">
-                    <label for="euro">Euro</label><br>
-                    <input type="radio" required id="pound" name="currency" value="Pound">
-                    <label for="pound">Pound</label><br>
-                    <input type="radio" required id="krone" name="currency" value="Krone">
-                    <label for="krone">Krone</label><br><br>
-                    <p>What element is denoted by the chemical symbol Sn in the periodic table?</p>
-                    <input type="radio" required id="gold" name="symbol" value="Gold">
-                    <label for="gold">Gold</label><br>
-                    <input type="radio" required id="silver" name="symbol" value="Silver">
-                    <label for="silver">Silver</label><br>
-                    <input type="radio" required id="tin" name="symbol" value="Tin">
-                    <label for="tin">Tin</label><br>
-                    <input type="radio" required id="zinc" name="symbol" value="Zinc">
-                    <label for="zinc">Zinc</label><br><br>
-                    <p>Who is the president of the United States?</p>
-                    <input type="radio" required id="imran khan" name="president" value="Imran Khan">
-                    <label for="imran khan">Imran Khan</label><br>
-                    <input type="radio" required id="joe biden" name="president" value="Joe Biden">
-                    <label for="joe biden">Joe Biden</label><br>
-                    <input type="radio" required id="donald trump" name="president" value="Donald Trump">
-                    <label for="donald trump">Donald Trump</label><br>
-                    <input type="radio" required id="alexander" name="president" value="Alexander">
-                    <label for="alexander">Alexander</label><br><br>
-                    <div class="submit-area3">
-                        <button data-type="submit" class="btn" id="beginner-question-btn">Submit</button>
-                    </div>
-                </div>
-                <div id="intermediate-questions">
-                    <p>Which soft drink is commonly associated with Scotland?</p>
-                    <input type="radio" required id="coca-cola" name="drink" value="Coca-Cola">
-                    <label for="coca-cola">Coca-Cola</label><br>
-                    <input type="radio" required id="irn-bru" name="drink" value="Irn-Bru">
-                    <label for="irn-bru">Irn-Bru</label><br>
-                    <input type="radio" required id="wine" name="drink" value="Wine">
-                    <label for="wine">Wine</label><br>
-                    <input type="radio" required id="oasis" name="drink" value="Oasis">
-                    <label for="oasis">Oasis</label><br><br>
-                    <p>How many human players are there on each side in a polo match?</p>
-                    <input type="radio" required id="one" name="players" value="One">
-                    <label for="one">One</label><br>
-                    <input type="radio" required id="two" name="players" value="Two">
-                    <label for="two">Two</label><br>
-                    <input type="radio" required id="three" name="players" value="Three">
-                    <label for="three">Three</label><br>
-                    <input type="radio" required id="four" name="players" value="Four">
-                    <label for="four">Four</label><br><br>
-                    <p>How many times has England won the men's football World Cup?</p>
-                    <input type="radio" required id="once" name="times" value="Once">
-                    <label for="once">Once</label><br>
-                    <input type="radio" required id="twice" name="times" value="Twice">
-                    <label for="twice">Twice</label><br>
-                    <input type="radio" required id="thrice" name="times" value="Thrice">
-                    <label for="thrice">Thrice</label><br>
-                    <input type="radio" required id="four-times" name="times" value="Four-Times">
-                    <label for="four-times">Four-Times</label><br><br>
-                    <p>What was the most popular girls name in the UK in 2019?</p>
-                    <input type="radio" required id="olivia" name="girl" value="Olivia">
-                    <label for="olivia">Olivia</label><br>
-                    <input type="radio" required id="ava" name="girl" value="Ava">
-                    <label for="ava">Ava</label><br>
-                    <input type="radio" required id="emma" name="girl" value="Emma">
-                    <label for="emma">Emma</label><br>
-                    <input type="radio" required id="sophia" name="girl" value="Sophia">
-                    <label for="sophia">Sophia</label><br><br>
-                    <p>What was the Turkish city of Istanbul called before 1930? </p>
-                    <input type="radio" required id="bursa" name="city" value="Bursa">
-                    <label for="bursa">Bursa</label><br>
-                    <input type="radio" required id="constantinople" name="city" value="Constantinople">
-                    <label for="constantinople">Constantinople</label><br>
-                    <input type="radio" required id="konya" name="city" value="Konya">
-                    <label for="konya">Konya</label><br>
-                    <input type="radio" required id="izmir" name="city" value="Izmir">
-                    <label for="izmir">Izmir</label><br><br>
-                    <div class="submit-area4">
-                        <button data-type="submit" class="btn" id="intermediate-question-btn">Submit</button>
-                    </div>
-                </div>
-                <div id="advanced-questions">
-                    <p>How many time zones in Continental United States?</p>
-                    <input type="radio" required id="one" name="zone" value="One">
-                    <label for="one">One</label><br>
-                    <input type="radio" required id="two" name="zone" value="Two">
-                    <label for="two">Two</label><br>
-                    <input type="radio" required id="three" name="zone" value="Three">
-                    <label for="three">Three</label><br>
-                    <input type="radio" required id="four" name="zone" value="Four">
-                    <label for="four">Four</label><br><br>
-                    <p>In which part of your body would you find the cruciate ligament?</p>
-                    <input type="radio" required id="knee" name="body-part" value="Knee">
-                    <label for="knee">Knee</label><br>
-                    <input type="radio" required id="elbow" name="body-part" value="Elbow">
-                    <label for="elbow">Elbow</label><br>
-                    <input type="radio" required id="brain" name="body-part" value="Brain">
-                    <label for="brain">Brain</label><br>
-                    <input type="radio" required id="feet" name="body-part" value="Feet">
-                    <label for="feet">Feet</label><br><br>
-                    <p>In what US State is the city Nashville? </p>
-                    <input type="radio" required id="alabama" name="State" value="Alabama">
-                    <label for="alabama">Alabama</label><br>
-                    <input type="radio" required id="california" name="State" value="California">
-                    <label for="california">California</label><br>
-                    <input type="radio" required id="tennessee" name="State" value="Tennessee">
-                    <label for="tennessee">Tennessee</label><br>
-                    <input type="radio" required id="alaska" name="State" value="Alaska">
-                    <label for="alaska">Alaska</label><br><br>
-                    <p>Which country in the world is believed to have the most miles of motorway?</p>
-                    <input type="radio" required id="pakistan" name="country" value="Pakistan">
-                    <label for="pakistan">Pakistan</label><br>
-                    <input type="radio" required id="china" name="country" value="China">
-                    <label for="china">China</label><br>
-                    <input type="radio" required id="russia" name="country" value="Russia">
-                    <label for="russia">Russia</label><br>
-                    <input type="radio" required id="usa" name="country" value="Usa">
-                    <label for="usa">Usa</label><br><br>
-                    <p>Which popular video game franchise has released games with the subtitles World At War and Black Ops?</p>
-                    <input type="radio" required id="world of Tanks" name="game" value="World of Tanks">
-                    <label for="world of Tanks">World of Tanks</label><br>
-                    <input type="radio" required id="the Legend of Mir 3" name="game" value="The Legend of Mir 3">
-                    <label for="the Legend of Mir 3">The Legend of Mir 3</label><br>
-                    <input type="radio" required id="league of Legends" name="game" value="League of Legends">
-                    <label for="league of Legends">League of Legends</label><br>
-                    <input type="radio" required id="call of Duty" name="game" value="Call of Duty">
-                    <label for="call of Duty">Call of Duty</label><br><br>
-                    <div class="submit-area5">
-                        <button data-type="submit" class="btn" id="advanced-question-btn">Submit</button>
-                    </div>
-                </div>
-                <div class="score-area">
-                    <p class="scores">Correct Answers <span id="score"></span></p>
-                    <p class="scores">Incorrect Answers <span id="incorrect"></span></p>
-                </div>
-                <div id="mistakes-list"></div>
-            </section> 
-            <div id="back">
-                <button onclick="history.back()">Go Back</button>
-            </div>
-            <div>
+              <h1 class="heading"><i class="fas fa-globe"></i> GeneralKnowledgeQuiz</h1>
+              <div class="info-area">
+                 <p>Lets test your knowledge</p>
+                 <p>Add username to start quiz</p>
+                 <p><i class="fas fa-arrow-alt-circle-down"></i></p>
+              </div>
+              <div class="input-area">
+                 <input id="username" required type="text" name="username" placeholder="Add Username" >
+              </div>
+              <div class="submit-area">
+                 <button data-type="submit" class="btn" id="my-btn">Submit</button>
+              </div>
+              <div class="choice">
+                 <h3>Choose difficulty</h3>
+                 <p>Low</p>
+                 <p>Medium</p>
+                 <p>High</p>
+              </div>
+              <section id = "select-level">
+                 <p id="welcome-username"></p><p>Please select your level</p>
+                 <input type="radio" required id="beginner" name="level" value="beginner">
+                 <label for="beginner">Beginner</label><br>
+                 <input type="radio" required id="intermediate" name="level" value="intermediate">
+                 <label for="intermediate">Intermediate</label><br>
+                 <input type="radio" required id="advanced" name="level" value="advanced">
+                 <label for="advanced">Advanced</label><br><br>
+                 <div class="submit-area1">
+                     <button data-type="submit" class="btn1" id="my-level-btn">Submit</button>
+                 </div>
+             </section> 
+             <section class="questions">
+                 <div id="beginner-question">
+                     <p>What is the capital of Pakistan?</p>
+                     <input type="radio" id="islamabad" name="capital" value="Islamabad">
+                     <label for="islamabad">Islambad</label><br>
+                     <input type="radio" id="lahore" name="capital" value="Lahore">
+                     <label for="lahore">Lahore</label><br>
+                     <input type="radio" id="karachi" name="capital" value="Karachi">
+                     <label for="karachi">Karachi</label><br>
+                     <input type="radio" id="multan" name="capital" value="Multan">
+                     <label for="multan">Multan</label><br><br>
+                     <p>What is the smallest planet in our solar system?</p>
+                     <input type="radio" id="pluto" name="planet" value="Pluto">
+                     <label for="pluto">Pluto</label><br>
+                     <input type="radio" id="mars" name="planet" value="Mars">
+                     <label for="mars">Mars</label><br>
+                     <input type="radio" id="mercury" name="planet" value="Mercury">
+                     <label for="mercury">Mercury</label><br>
+                     <input type="radio" id="earth" name="planet" value="Earth">
+                     <label for="earth">Earth</label><br><br>
+                     <p>What is the currency of Denmark?</p>
+                     <input type="radio" id="dollar" name="currency" value="Dollar">
+                     <label for="dollar">Dollar</label><br>
+                     <input type="radio" id="euro" name="currency" value="Euro">
+                     <label for="euro">Euro</label><br>
+                     <input type="radio" id="pound" name="currency" value="Pound">
+                     <label for="pound">Pound</label><br>
+                     <input type="radio" id="krone" name="currency" value="Krone">
+                     <label for="krone">Krone</label><br><br>
+                     <p>What element is denoted by the chemical symbol Sn in the periodic table?</p>
+                     <input type="radio" id="gold" name="symbol" value="Gold">
+                     <label for="gold">Gold</label><br>
+                     <input type="radio" id="silver" name="symbol" value="Silver">
+                     <label for="silver">Silver</label><br>
+                     <input type="radio" id="tin" name="symbol" value="Tin">
+                     <label for="tin">Tin</label><br>
+                     <input type="radio" id="zinc" name="symbol" value="Zinc">
+                     <label for="zinc">Zinc</label><br><br>
+                     <p>Who is the president of the United States?</p>
+                     <input type="radio" id="imran khan" name="president" value="Imran Khan">
+                     <label for="imran khan">Imran Khan</label><br>
+                     <input type="radio" id="joe biden" name="president" value="Joe Biden">
+                     <label for="joe biden">Joe Biden</label><br>
+                     <input type="radio" id="donald trump" name="president" value="Donald Trump">
+                     <label for="donald trump">Donald Trump</label><br>
+                     <input type="radio" id="alexander" name="president" value="Alexander">
+                     <label for="alexander">Alexander</label><br><br>
+                     <div class="submit-area3">
+                         <button data-type="submit" class="btn" id="beginner-question-btn">Submit</button>
+                     </div>
+                 </div>
+                 <div id="intermediate-questions">
+                     <p>Which soft drink is commonly associated with Scotland?</p>
+                     <input type="radio" id="coca-cola" name="drink" value="Coca-Cola">
+                     <label for="coca-cola">Coca-Cola</label><br>
+                     <input type="radio" id="irn-bru" name="drink" value="Irn-Bru">
+                     <label for="irn-bru">Irn-Bru</label><br>
+                     <input type="radio" id="wine" name="drink" value="Wine">
+                     <label for="wine">Wine</label><br>
+                     <input type="radio" id="oasis" name="drink" value="Oasis">
+                     <label for="oasis">Oasis</label><br><br>
+                     <p>How many human players are there on each side in a polo match?</p>
+                     <input type="radio" id="one" name="players" value="One">
+                     <label for="one">One</label><br>
+                     <input type="radio" id="two" name="players" value="Two">
+                     <label for="two">Two</label><br>
+                     <input type="radio" id="three" name="players" value="Three">
+                     <label for="three">Three</label><br>
+                     <input type="radio" id="four" name="players" value="Four">
+                     <label for="four">Four</label><br><br>
+                     <p>How many times has England won the men's football World Cup?</p>
+                     <input type="radio" id="once" name="times" value="Once">
+                     <label for="once">Once</label><br>
+                     <input type="radio" id="twice" name="times" value="Twice">
+                     <label for="twice">Twice</label><br>
+                     <input type="radio" id="thrice" name="times" value="Thrice">
+                     <label for="thrice">Thrice</label><br>
+                     <input type="radio" id="four-times" name="times" value="Four-Times">
+                     <label for="four-times">Four-Times</label><br><br>
+                     <p>What was the most popular girls name in the UK in 2019?</p>
+                     <input type="radio" id="olivia" name="girl" value="Olivia">
+                     <label for="olivia">Olivia</label><br>
+                     <input type="radio" id="ava" name="girl" value="Ava">
+                     <label for="ava">Ava</label><br>
+                     <input type="radio" id="emma" name="girl" value="Emma">
+                     <label for="emma">Emma</label><br>
+                     <input type="radio" id="sophia" name="girl" value="Sophia">
+                     <label for="sophia">Sophia</label><br><br>
+                     <p>What was the Turkish city of Istanbul called before 1930? </p>
+                     <input type="radio" id="bursa" name="city" value="Bursa">
+                     <label for="bursa">Bursa</label><br>
+                     <input type="radio" id="constantinople" name="city" value="Constantinople">
+                     <label for="constantinople">Constantinople</label><br>
+                     <input type="radio" id="konya" name="city" value="Konya">
+                     <label for="konya">Konya</label><br>
+                     <input type="radio" id="izmir" name="city" value="Izmir">
+                     <label for="izmir">Izmir</label><br><br>
+                     <div class="submit-area4">
+                         <button data-type="submit" class="btn" id="intermediate-question-btn">Submit</button>
+                     </div>
+                 </div>
+                 <div id="advanced-questions">
+                     <p>How many time zones in Continental United States?</p>
+                     <input type="radio" id="one" name="zone" value="One">
+                     <label for="one">One</label><br>
+                     <input type="radio" id="two" name="zone" value="Two">
+                     <label for="two">Two</label><br>
+                     <input type="radio" id="three" name="zone" value="Three">
+                     <label for="three">Three</label><br>
+                     <input type="radio" id="four" name="zone" value="Four">
+                     <label for="four">Four</label><br><br>
+                     <p>In which part of your body would you find the cruciate ligament?</p>
+                     <input type="radio" id="knee" name="body-part" value="Knee">
+                     <label for="knee">Knee</label><br>
+                     <input type="radio" id="elbow" name="body-part" value="Elbow">
+                     <label for="elbow">Elbow</label><br>
+                     <input type="radio" id="brain" name="body-part" value="Brain">
+                     <label for="brain">Brain</label><br>
+                     <input type="radio" id="feet" name="body-part" value="Feet">
+                     <label for="feet">Feet</label><br><br>
+                     <p>In what US State is the city Nashville? </p>
+                     <input type="radio" id="alabama" name="State" value="Alabama">
+                     <label for="alabama">Alabama</label><br>
+                     <input type="radio" id="california" name="State" value="California">
+                     <label for="california">California</label><br>
+                     <input type="radio" id="tennessee" name="State" value="Tennessee">
+                     <label for="tennessee">Tennessee</label><br>
+                     <input type="radio" id="alaska" name="State" value="Alaska">
+                     <label for="alaska">Alaska</label><br><br>
+                     <p>Which country in the world is believed to have the most miles of motorway?</p>
+                     <input type="radio" id="pakistan" name="country" value="Pakistan">
+                     <label for="pakistan">Pakistan</label><br>
+                     <input type="radio" id="china" name="country" value="China">
+                     <label for="china">China</label><br>
+                     <input type="radio" id="russia" name="country" value="Russia">
+                     <label for="russia">Russia</label><br>
+                     <input type="radio" id="usa" name="country" value="Usa">
+                     <label for="usa">Usa</label><br><br>
+                     <p>Which popular video game franchise has released games with the subtitles World At War and Black Ops?</p>
+                     <input type="radio" id="world of Tanks" name="game" value="World of Tanks">
+                     <label for="world of Tanks">World of Tanks</label><br>
+                     <input type="radio" id="the Legend of Mir 3" name="game" value="The Legend of Mir 3">
+                     <label for="the Legend of Mir 3">The Legend of Mir 3</label><br>
+                     <input type="radio" id="league of Legends" name="game" value="League of Legends">
+                     <label for="league of Legends">League of Legends</label><br>
+                     <input type="radio" id="call of Duty" name="game" value="Call of Duty">
+                     <label for="call of Duty">Call of Duty</label><br><br>
+                     <div class="submit-area5">
+                         <button data-type="submit" class="btn" id="advanced-question-btn">Submit</button>
+                     </div>
+                 </div>
+                 <div class="score-area">
+                     <p class="scores">Correct Answers <span id="score"></span></p>
+                     <p class="scores">Incorrect Answers <span id="incorrect"></span></p>
+                 </div>
+                 <div id="mistakes-list"></div>
+              </section> 
+              <div id="back">
+                 <button onclick="history.back()">Go Back</button>
+             </div>
+             <div>
                  <p class="social-media"> <a href="https://github.com" target="_blank" rel="noopener" aria-label="visits our github page(open in a new tab)"><i class="fa fa-github-square"></i></p>
-            </div>
-        </div>
-    </section>
+             </div>
+         </div>
+      </section>
      
-     <script src="https://kit.fontawesome.com/84ed437fb8.js" crossorigin="anonymous"></script>
-     <script src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/84ed437fb8.js" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
  </body>
 </html>
