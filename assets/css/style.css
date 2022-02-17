@@ -62,6 +62,10 @@ body {
     display: none;
 }
 
+.social-media{
+    margin-top: 50px;
+}
+
 .fa.fa-github-square{
     font-size: 50px !important;
     color: black;
@@ -75,6 +79,11 @@ body {
 
 #beginner-question{
     display: none;
+}
+
+#my-level-btn{
+    width: 80px;
+    height: 40px;
 }
 
 #intermediate-questions{
@@ -107,4 +116,30 @@ display: none;
 .scores {
     display: inline-block;
     padding: 30px;
+}
+
+/*---buttons*/
+
+#my-level-btn{
+    width: 80px;
+    height: 40px;
+}
+
+#beginner-question-btn{
+    width: 80px;
+    height: 40px;
+}
+
+#intermediate-question-btn{
+    width: 80px;
+    height: 40px;
+}
+
+#advanced-question-btn{
+    width: 80px;
+    height: 40px;
+}
+
+label{
+    vertical-align: auto;
 }
