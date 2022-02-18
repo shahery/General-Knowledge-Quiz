@@ -34,7 +34,7 @@ function emptyUsername() {
     if (usernameEmpty == "") {
         alert("Please Enter username");
         return false;
-    };
+    }
 }
 
 let myButton = document.getElementById('my-btn');
@@ -64,7 +64,7 @@ myButton2.addEventListener('click', selectLevel);
 function showLevel(){
     
     let box = document.getElementsByClassName('quiz')[0];
-    box.style.height = '170vh';
+    box.style.height = '180vh';
    
     if(level=="beginner"){
         let node = document.getElementById('beginner-question');
