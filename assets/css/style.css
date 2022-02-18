@@ -7,7 +7,7 @@ body {
     text-align: center;
     background-image: url(../images/bodyimage.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 /* --------- Heading */
@@ -140,6 +140,36 @@ display: none;
     height: 40px;
 }
 
-label{
-    vertical-align: auto;
+.rad{
+    display: inline-flex;
+    align-items: center;
+}
+  
+/* Media Queries */
+
+/* for larger to medium screen size from 950px wide and open */
+@media screen and (max-width: 950px){
+    .quiz{
+        width: 90%;
+        height: 90vh;
+        font-size: large;
+    }
+    .scores {
+        padding: 10px;
+    }
+}
+
+/* for medium screen size from 600px wide and open */
+@media screen and (max-width: 600px){
+    .heading {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .quiz{
+        width: 90%;
+        height: 90vh;
+    }
+    .scores {
+        padding: 5px;
+    }
 }
