@@ -1,5 +1,8 @@
 # GeneralKnowledgeQuiz
 
+# About
+GeneralKnowledgeQuiz as the name describes is the quiz to test the general knowledge of the users. The quiz comes with the different levels like beginner, intermediate and advanced as difficulty level. Users can choose any level they want and enjoy testing their knowledge.
+The purpose of the quiz is to enhance the general knowledge of the users by showing them the right answers if they select any wrong answer along with entertainment of scores.
 
 * Users stories:
   
@@ -64,3 +67,7 @@
 
  ## Media
   * The Images in the website were taken from [Pexels](https://www.pexels.com)
+
+## Acknowledgements
+ * My mentor who supports me throughout the project.
+ * My cousin who helped me in programming.
