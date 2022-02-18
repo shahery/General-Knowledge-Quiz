@@ -5,13 +5,19 @@
   
 
 # Features
+ *
 
 
 # Technology Used 
-  * [HTML](https://en.wikipedia.org)
-  * [CSS](https://en.wikipedia.org)
+  * [HTML](https://en.wikipedia.org/wiki/HTML)
+  * [CSS](https://en.wikipedia.org/wiki/CSS)
+  * [JS](https://en.wikipedia.org/wiki/JavaScript)
   * [GitHub](https://github.com)
   * [Gitpod](https://www.gitpod.io) 
+
+## Features left to implement
+* In future I will add the form work dynamically in javascript.
+
 # Testing
   * I tested that this page works in different browsers: Chrome, safari, firefox.
   * I confirmed that this project is responsive, looks good and functions on all standard screen sizes using
@@ -31,6 +37,9 @@
 
  * CSS
    * No errors were returned when passing through the official [jigsaw validator](https://jigsaw.w3.org).
+
+ * JS
+   * [JSHint JavaScript validator](https://jshint.com/)  
 
  * Accessibilty
    * I confirmed that the colors and font chosen are easy to read and accessible by running it through lighthouse in devtools.
