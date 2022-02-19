@@ -155,7 +155,7 @@ myButton5.addEventListener('click', submitAnswer);
 
 const beginnerAnswers = ["Islamabad","Mercury","Krone","Tin","Joe Biden"];
 const intermediateAnswers = ["Irn-Bru","Four","Once","Olivia","Constantinople"];
-const advancedAnswers = ["Four","Knee","Tennessee","China","Call of Duty"];
+const advancedAnswers = ["4","Knee","Tennessee","China","Call of Duty"];
 
 /**
  * Checks the answer compare to userAnswer in
