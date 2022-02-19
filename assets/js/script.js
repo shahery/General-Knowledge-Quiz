@@ -153,9 +153,9 @@ myButton4.addEventListener('click', submitAnswer);
 let myButton5 = document.getElementById('advanced-question-btn');
 myButton5.addEventListener('click', submitAnswer);
 
-const beginnerAnswers = ["Islamabad","Mercury","Krone","Tin","Joe Biden"];
+const beginnerAnswers = ["Islamabad","Mercury","Krone","Tin","Joe-Biden"];
 const intermediateAnswers = ["Irn-Bru","Four","Once","Olivia","Constantinople"];
-const advancedAnswers = ["4","Knee","Tennessee","China","Call of Duty"];
+const advancedAnswers = ["4","Knee","Tennessee","China","Call-of-Duty"];
 
 /**
  * Checks the answer compare to userAnswer in
