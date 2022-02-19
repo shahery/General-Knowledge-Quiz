@@ -47,13 +47,19 @@ myButton.addEventListener('click', submitUsername);
 
 let level;
 function selectLevel (event) {
-    level = document.querySelector('input[name="level"]:checked').value;
-    if (typeof(level) != "undefined"){
-        level = document.querySelector('input[name="level"]:checked').value;
-        console.log(level);
-        let node = document.getElementById('select-level');
-        node.style.display='none';
-        showLevel();
+    if(document.getElementById('intermediate').checked || document.getElementById('beginner').checked
+     || document.getElementById('advanced').checked){
+     level = document.querySelector('input[name="level"]:checked').value;
+       if (typeof(level) != "undefined"){
+         level = document.querySelector('input[name="level"]:checked').value;
+         console.log(level);
+         let node = document.getElementById('select-level');
+         node.style.display='none';
+         showLevel();
+        }
+    }
+    else{
+        alert("No level selected"); 
     }
 }
 
@@ -64,7 +70,7 @@ myButton2.addEventListener('click', selectLevel);
 function showLevel(){
     
     let box = document.getElementsByClassName('quiz')[0];
-    box.style.height = '180vh';
+    box.style.height = '185vh';
    
     if(level=="beginner"){
         let node = document.getElementById('beginner-question');
@@ -90,60 +96,101 @@ function showLevel(){
  * submitAnswers for beginner,intermediate and advanced questions.
  */
 
-const userAnswers=[];
+const userAnswers=["","","","",""];
 
 function submitAnswer (event) {
-        let box = document.getElementsByClassName('quiz')[0];
-        box.style.height = '80vh';
+    let box = document.getElementsByClassName('quiz')[0];
+    box.style.height = '185vh';
+
+
+    var capitalSelected = check('capital');
+    var planetSelected = check('planet');
+    var currencySelected = check('currency');
+    var symbolSelected = check('symbol');
+    var presidentSelected = check('president');
+    var beginnerSelected = false;
+
+    var drinkSelected = check('drink');
+    var playersSelected = check('players');
+    var timesSelected = check('times');
+    var girlSelected = check('girl');
+    var citySelected = check('city');
+    var intermediateSelected = false;
+
+    var zoneSelected = check('zone');
+    var bodypartSelected = check('body-part');
+    var StateSelected = check('State');
+    var countrySelected = check('country');
+    var gameSelected = check('game');
+    var advancedSelected = false;
 
         if(level=='beginner'){
-            let node = document.getElementById('beginner-question');
-            node.style.display='none';
+            if(capitalSelected && planetSelected && currencySelected && symbolSelected && presidentSelected){
+             let node = document.getElementById('beginner-question');
+             node.style.display='none';
             
-            userAnswers[0]=(document.querySelector('input[name="capital"]:checked').value);
-            userAnswers[1]=(document.querySelector('input[name="planet"]:checked').value);
-            userAnswers[2]=(document.querySelector('input[name="currency"]:checked').value);
-            userAnswers[3]=(document.querySelector('input[name="symbol"]:checked').value);
-            userAnswers[4]=(document.querySelector('input[name="president"]:checked').value);
+             userAnswers[0]=(document.querySelector('input[name="capital"]:checked').value);
+             userAnswers[1]=(document.querySelector('input[name="planet"]:checked').value);
+             userAnswers[2]=(document.querySelector('input[name="currency"]:checked').value);
+             userAnswers[3]=(document.querySelector('input[name="symbol"]:checked').value);
+             userAnswers[4]=(document.querySelector('input[name="president"]:checked').value);
 
-            for (let index = 0; index < userAnswers.length; index++) {
-                console.log(userAnswers[index]);        
+             for (let index = 0; index < userAnswers.length; index++) {
+                 console.log(userAnswers[index]);        
+                }
+             beginnerSelected=true;
             }
         
         }
         if(level=='intermediate'){
-            let node = document.getElementById('intermediate-questions');
-            node.style.display='none';
-            userAnswers[0]=(document.querySelector('input[name="drink"]:checked').value);
-            userAnswers[1]=(document.querySelector('input[name="players"]:checked').value);
-            userAnswers[2]=(document.querySelector('input[name="times"]:checked').value);
-            userAnswers[3]=(document.querySelector('input[name="girl"]:checked').value);
-            userAnswers[4]=(document.querySelector('input[name="city"]:checked').value);
+            if(drinkSelected && playersSelected && timesSelected && girlSelected && citySelected){
+             let node = document.getElementById('intermediate-questions');
+             node.style.display='none';
+             userAnswers[0]=(document.querySelector('input[name="drink"]:checked').value);
+             userAnswers[1]=(document.querySelector('input[name="players"]:checked').value);
+             userAnswers[2]=(document.querySelector('input[name="times"]:checked').value);
+             userAnswers[3]=(document.querySelector('input[name="girl"]:checked').value);
+             userAnswers[4]=(document.querySelector('input[name="city"]:checked').value);
 
-            for (let index = 0; index < userAnswers.length; index++) {
-                console.log(userAnswers[index]);        
+             for (let index = 0; index < userAnswers.length; index++) {
+                 console.log(userAnswers[index]);        
+                }
+                intermediateSelected = true;
             }
         
         }
         if(level=='advanced'){
-            let node = document.getElementById('advanced-questions');
-            node.style.display='none';
-            userAnswers[0]=(document.querySelector('input[name="zone"]:checked').value);
-            userAnswers[1]=(document.querySelector('input[name="body-part"]:checked').value);
-            userAnswers[2]=(document.querySelector('input[name="State"]:checked').value);
-            userAnswers[3]=(document.querySelector('input[name="country"]:checked').value);
-            userAnswers[4]=(document.querySelector('input[name="game"]:checked').value);
+            if(bodypartSelected && StateSelected && countrySelected && gameSelected && zoneSelected){
+             let node = document.getElementById('advanced-questions');
+             node.style.display='none';
+             userAnswers[0]=(document.querySelector('input[name="zone"]:checked').value);
+             userAnswers[1]=(document.querySelector('input[name="body-part"]:checked').value);
+             userAnswers[2]=(document.querySelector('input[name="State"]:checked').value);
+             userAnswers[3]=(document.querySelector('input[name="country"]:checked').value);
+             userAnswers[4]=(document.querySelector('input[name="game"]:checked').value);
 
-            for (let index = 0; index < userAnswers.length; index++) {
-                console.log(userAnswers[index]);        
+             for (let index = 0; index < userAnswers.length; index++) {
+                 console.log(userAnswers[index]);        
+                }
+                advancedSelected = true;
             }
-            
         }
-       
+        if(beginnerSelected || intermediateSelected || advancedSelected)
         showResult();
- 
+        else
+        alert("Please answer all the questions"); 
 }
+function check(question){
+    var radios = document.getElementsByName(question);
 
+    for (var i = 0, len = radios.length; i < len; i++){
+        if (radios[i].checked){
+            return true;
+        }
+    }
+
+    return false;
+}
 let myButton3 = document.getElementById('beginner-question-btn');
 myButton3.addEventListener('click', submitAnswer);
 
@@ -163,6 +210,8 @@ const advancedAnswers = ["4","Knee","Tennessee","China","Call-of-Duty"];
 * */
 
 function showResult(){
+    let box = document.getElementsByClassName('quiz')[0];
+    box.style.height = '80vh';
     let equal = true;
     let countError = 0;
     let div= document.getElementById('mistakes-list');
@@ -225,8 +274,3 @@ function showResult(){
     backButton.addEventListener('click',back);*/
 
 }
-
-/**
- * Adding required attributes for all the inputs
- */
-
