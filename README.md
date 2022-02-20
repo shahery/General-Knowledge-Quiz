@@ -1,15 +1,57 @@
 # GeneralKnowledgeQuiz
 
 # About
-GeneralKnowledgeQuiz as the name describes is the quiz to test the general knowledge of the users. The quiz comes with the different levels like beginner, intermediate and advanced as difficulty level. Users can choose any level they want and enjoy testing their knowledge.
-The purpose of the quiz is to enhance the general knowledge of the users by showing them the right answers if they select any wrong answer along with entertainment of scores.
+  GeneralKnowledgeQuiz as the name describes is the quiz to test the general knowledge of the users. The quiz comes with the different levels like beginner, intermediate and advanced as difficulty level. Users can choose any level they want and enjoy testing their knowledge.
+  The purpose of the quiz is to enhance the general knowledge of the users by showing them the right answers if they select any wrong answer along with entertainment of scores.
 
-* Users stories:
+ * Users stories:
+
+     The quiz is made simple, easy to access with good colour and looking good. The quiz is made for the following:
+    * Users who are interesting in enhancing their general knowledge.
+    * Users who love participating in the quizes.
+    * Users who always ready to test their knowledge.
+    * Users who like entertainment of score.
   
 
 # Features
- *
-
+ * Header
+   * The header showing the quiz name at the top of the page: GeneralKnowledgeQuiz.
+   * The name clearly showing the purpose of the site as a quiz.
+   <img width="1111" alt="Heading" src="https://user-images.githubusercontent.com/95220937/154838208-c90b752c-2b01-4f45-842e-61e5ec2821f1.png">
+ * Username Area
+   * Username area consists of : Info, Indication to add username, Input field and Submit button.
+   * Add username is compulsory to participating in quiz.
+   * Alert will show with the message: Please Enter Username, if someone does not add username and press submit button.
+   <img width="866" alt="Username-Area" src="https://user-images.githubusercontent.com/95220937/154838429-1f38b657-b1e8-43a9-9d79-c5a438a4cebf.png">
+ * Select Level 
+   * Select level provides the options to select three levels: Beginner, Intermediate and Advanced.
+   * User must select the option to proceed in the quiz.
+   * Alert will show with the message: No Level Selected, if user does not select the option.
+   <img width="958" alt="Select-level-area" src="https://user-images.githubusercontent.com/95220937/154838626-e3393271-d4f1-4a4d-a42d-8b22f69e0aab.png">
+ * Beginner Questions 
+   * This page will consist of five beginner questions with four options.
+   * User will have to attend all the questions to check score and the right answers.
+   * Alert will show with the message: Please answer all the questions, if the user does not answer any question.
+   <img width="1133" alt="Beginner-Questions" src="https://user-images.githubusercontent.com/95220937/154839001-918a8227-65c3-440f-941d-1232a75a2d64.png">
+   <img width="1050" alt="Beginner-Questions-page1" src="https://user-images.githubusercontent.com/95220937/154838909-b9932806-2775-4b52-b10d-1bedc93f21ef.png">
+ * Intermediate Questions 
+   * This page will consist of five intermediate questions with four options.
+   * User will have to attend all the questions to check score and the right answers.
+   * Alert will show with the message: Please answer all the questions, if the user does not answer any question.
+   <img width="1027" alt="Intermediate-Questions-page" src="https://user-images.githubusercontent.com/95220937/154839056-577e11e1-6ea8-4dc2-8713-e04e0787c3a2.png">
+   <img width="1012" alt="Intermediate-Questions-page1" src="https://user-images.githubusercontent.com/95220937/154839081-1fb54342-ef82-4478-aab4-13bfe9bba5e2.png">
+ * Advanced Questions
+   * This page will consist of five advanced questions with four options.
+   * User will have to attend all the questions to check score and the right answers.
+   * Alert will show with the message: Please answer all the questions, if the user does not answer any question. 
+   <img width="1010" alt="Advanced-Questions-page" src="https://user-images.githubusercontent.com/95220937/154839176-05134f77-0cc5-4bb9-ae93-c435e7317501.png">
+   <img width="1104" alt="Advanced-Questions-page1" src="https://user-images.githubusercontent.com/95220937/154839190-dfb4e3a0-1586-498c-9917-acdea9c4d923.png">
+ * Score Area 
+   * Score area showing the sores to the users with the correct and incorrect score.
+   * Score area also displaying the right answers to the users if they answered any question wrong.
+ * The Footer
+   * The footer showing the social media link to the users.
+   <img width="1107" alt="Social-media" src="https://user-images.githubusercontent.com/95220937/154839271-0c572ede-d788-4eca-9110-ece159c1f286.png">
 
 # Technology Used 
   * [HTML](https://en.wikipedia.org/wiki/HTML)
@@ -69,5 +111,5 @@ The purpose of the quiz is to enhance the general knowledge of the users by show
   * The Images in the website were taken from [Pexels](https://www.pexels.com)
 
 ## Acknowledgements
- * My mentor who supports me throughout the project.
+ * My mentor who supported me throughout the project.
  * My cousin who helped me in programming.
