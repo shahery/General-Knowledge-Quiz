@@ -267,10 +267,11 @@ function showResult(){
         div.innerHTML= text;
     }
 
-    /*let backButton=document.getElementById("back");
-    back.innerHTML=backButton;
-    backButton.style.display="block";
-    console.log(backButton);
-    backButton.addEventListener('click',back);*/
+    document.getElementById('back');
+    back.style.display='block';
+    function goBack(){
+        history.go();
+     console.log(goBack);
+    }
 
 }
