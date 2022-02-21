@@ -1,4 +1,4 @@
-/* --------- Body style */
+/* Body style */
 
 body {
     background-color: white;
@@ -10,14 +10,14 @@ body {
     background-position: center;
 }
 
-/* --------- Heading */
+/* Heading */
 
 .heading {
     text-align: center;
     font-size: 2.5rem;
 }
 
-/* -------Quiz layout */
+/* Quiz layout */
 
 .quiz{
     text-align: center;
@@ -76,7 +76,7 @@ label {
     width: 160px;
 }
 
-/*-----Questions Area */
+/* Questions Area */
 
 #beginner-question{
     display: none;
@@ -95,7 +95,7 @@ display: none;
 display: none;
 }
 
-/*----- score area */
+/* score area */
 
 .score-area {
     margin: 7px auto;
@@ -119,7 +119,7 @@ display: none;
     padding: 30px;
 }
 
-/*---buttons*/
+/* buttons*/
 
 #my-level-btn{
     width: 80px;

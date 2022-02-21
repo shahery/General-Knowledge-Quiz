@@ -11,12 +11,12 @@ function submitUsername (event) {
             node[i].style.display = 'none';
         }
         let node2 = document.getElementsByClassName('input-area');
-        for (var i=0;i<node2.length;i++){
-            node2[i].style.display = 'none';
+        for (var index=0;index<node2.length;index++){
+            node2[index].style.display = 'none';
         }
         let node3 = document.getElementsByClassName('submit-area');
-        for (var i=0;i<node3.length;i++){
-            node3[i].style.display = 'none';
+        for (var index1=0;index1<node3.length;index1++){
+            node3[index1].style.display = 'none';
         }
         userName = document.getElementById('username').value;
         console.log(userName);
@@ -47,8 +47,7 @@ myButton.addEventListener('click', submitUsername);
 
 let level;
 function selectLevel (event) {
-    if(document.getElementById('intermediate').checked || document.getElementById('beginner').checked
-     || document.getElementById('advanced').checked){
+    if(document.getElementById('intermediate').checked || document.getElementById('beginner').checked || document.getElementById('advanced').checked){
      level = document.querySelector('input[name="level"]:checked').value;
        if (typeof(level) != "undefined"){
          level = document.querySelector('input[name="level"]:checked').value;
