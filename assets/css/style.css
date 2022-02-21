@@ -56,6 +56,13 @@ body {
 
 #back{
     display: none;
+    margin-top: 30px;
+}
+
+.bn{
+    height: 50px;
+    width: 100px;
+    background-color: lightyellow;
 }
 
 .social-media{
