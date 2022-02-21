@@ -88,6 +88,7 @@
 
  * Accessibilty
    * I confirmed that the colors and font chosen are easy to read and accessible by running it through lighthouse in devtools.
+   <img width="1120" alt="report" src="https://user-images.githubusercontent.com/95220937/154937434-e65d287b-adf3-46c0-8ed7-7f96c723f8da.png">
 
  ## Unfixed Bugs
   * No unfixed bugs.
