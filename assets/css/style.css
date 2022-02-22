@@ -5,7 +5,7 @@ body {
     font-family: "Raleway", sans-serif;
     color: black;
     text-align: center;
-    background-image: url(../images/bodyimage.jpg);
+    background-image: url(../images/backgroundimage.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -59,6 +59,8 @@ body {
 #select-level{
     display: none;
 }
+
+/* This code below was taken from stackoverflow */
 
 label {
     display: inline-block;

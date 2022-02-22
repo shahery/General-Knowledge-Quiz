@@ -1,4 +1,5 @@
 let userName = "";
+var usernameEmpty;
 
 /**
  * submitUsername function with the 
@@ -30,7 +31,6 @@ function submitUsername (event) {
         usernameText.innerHTML="Welcome "+ userName;
     }
 }
-var usernameEmpty;
 function emptyUsername() {
     usernameEmpty = document.getElementById("username").value;
     if (usernameEmpty == "") {
@@ -52,6 +52,7 @@ let level;
 
 function selectLevel (event) {
     if(document.getElementById('intermediate').checked || document.getElementById('beginner').checked || document.getElementById('advanced').checked){
+        // The code below was taken from stackoverflow //
      level = document.querySelector('input[name="level"]:checked').value;
        if (typeof(level) != "undefined"){
          level = document.querySelector('input[name="level"]:checked').value;
@@ -300,7 +301,7 @@ function showResult(){
         div.innerHTML= text;
     }
 
-    document.getElementById('back');
+    let back=document.getElementById('back');
     back.style.display='block';
 
     /**

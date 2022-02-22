@@ -2,7 +2,7 @@
 
 # About
   GeneralKnowledgeQuiz as the name describes is the quiz to test the general knowledge of the users. The quiz comes with the different levels like beginner, intermediate and advanced as difficulty level. Users can choose any level they want and enjoy testing their knowledge.
-  The purpose of the quiz is to enhance the general knowledge of the users by showing them the right answers if they select any wrong answer along with entertainment of scores.
+  The purpose of the quiz is to enhance the general knowledge of the users by showing them the right answers if they select any wrong answer along with the entertainment of scores.
 
 # Users stories:
     
@@ -90,11 +90,12 @@
        <img width="1413" alt="Html-check" src="https://user-images.githubusercontent.com/95220937/155034105-512057ee-0fa0-4eb7-b567-e2badd628b3d.png">
 
    * CSS
-     * No errors were returned when passing through the official [jigsaw validator](https://jigsaw.w3.org/css-validator/   #validate_by_input).
+     * No errors were returned when passing through the official [jigsaw validator](https://jigsaw.w3.org/css-validator/).
       <img width="1429" alt="Css-check" src="https://user-images.githubusercontent.com/95220937/155034197-234386db-7768-404c-a890-6c9830536c12.png">
 
    * JS
-     * [JSHint JavaScript validator](https://jshint.com/)  
+     * No warnings were returned when passing through [JSHint JavaScript validator](https://jshint.com/) 
+     <img width="1430" alt="Jshint" src="https://user-images.githubusercontent.com/95220937/155229998-cb16fbaf-d510-4317-85a4-b2d44e81b0df.png">
 
    * Accessibilty
      * I confirmed that the colors and font chosen are easy to read and accessible by running it through lighthouse in    devtools.
@@ -127,10 +128,9 @@
   [Back to top](#)
 # Credits
  ## Content
-   * The code to make the social media links was taken from Code institute [Love running](https://github.com/shahery/Love-running.git) project
    * Questions of the quiz were taken from [RadioTimes](https://RadioTimes.com)
    * The Idea of README.md file and the codes used for website were also learnt from [Code institute](https://codeinstitute.net)
-   * some codes used in html and javascript were taken from [Stackoverflow](https://stackoverflow.com/)
+   * some codes used in html, css and javascript were taken from [Stackoverflow](https://stackoverflow.com/)
 
  ## Icons
    * Icons were taken from [Font-awesome](https://fontawesome.com)
