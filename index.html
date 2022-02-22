@@ -7,6 +7,9 @@
      <link rel="stylesheet" href="assets/css/style.css">
      <title>GeneralKnowldegeQuiz</title>
  </head>
+
+ <!--Body-->
+
  <body>
      <section class="input-sec">
          <div class="quiz">
@@ -22,6 +25,9 @@
               <div class="submit-area">
                  <button data-type="submit" class="btn" id="my-btn" onClick="return emptyUsername()">Submit </button>
               </div>
+
+              <!--Select level-->
+
               <section id = "select-level">
                  <p id="welcome-username"></p><h5>Please select your level</h5>
                  <input type="radio" id="beginner" name="level" value="beginner">
@@ -34,7 +40,11 @@
                      <button data-type="submit" class="btn" id="my-level-btn">Submit</button>
                  </div>
              </section> 
+
+             <!--Questions Area-->
+
              <section class="questions">
+                  <!--Beginner questions-->
                  <div id="beginner-question">
                      <h4>Beginner Questions</h4>
                      <p><i class="far fa-hand-point-right"></i> What is the capital of Pakistan?</p>
@@ -86,6 +96,9 @@
                          <button data-type="submit" class="btn" id="beginner-question-btn">Submit</button>
                      </div>
                  </div>
+
+                 <!--Intermediate Questions-->
+
                  <div id="intermediate-questions">
                      <h4>Intermediate Questions</h4>
                      <p><i class="far fa-hand-point-right"></i> Which soft drink is commonly associated with Scotland?</p>
@@ -137,6 +150,9 @@
                          <button data-type="submit" class="btn" id="intermediate-question-btn">Submit</button>
                      </div>
                  </div>
+
+                 <!--Advanced Questions-->
+
                  <div id="advanced-questions">
                      <h4>Advanced Questions</h4>
                      <p><i class="far fa-hand-point-right"></i> How many time zones in Continental United States?</p>
@@ -188,21 +204,32 @@
                          <button data-type="submit" class="btn" id="advanced-question-btn">Submit</button>
                      </div>
                  </div>
+
+                 <!--Score Area-->
+
                  <div class="score-area">
                      <p class="scores">Correct Answers <span id="score"></span></p>
                      <p class="scores">Incorrect Answers <span id="incorrect"></span></p>
                  </div>
                  <div id="mistakes-list"></div>
               </section> 
+
+              <!--Back Button-->
+
               <form id="back">
                  <button class="bn" onclick="goBack();">Go back</button>
               </form>
+
+              <!--social Media as a footer-->
+
               <div class="social-media">
                  <a href="https://github.com" target="_blank" rel="noopener" aria-label="visits our github page(open in a new tab)"><i class="fa fa-github-square"></i></a>
               </div>
          </div>
       </section>
-     
+
+        <!--Fontawesome script and link with js-->
+        
         <script src="https://kit.fontawesome.com/84ed437fb8.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
  </body>
