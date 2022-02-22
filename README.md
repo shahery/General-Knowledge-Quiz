@@ -18,8 +18,6 @@
   * [Features left to implement](#features-left-to-implement)
   * [Testing](#testing)
   * [Bugs](#bugs)
-  * [Validator Testing](#validator-testing)
-  * [Unfixed Bugs](#unfixed-bugs)
   * [Colour](#colour)
   * [Deployment](#deployment)
   * [Credits](#credits) 
@@ -60,6 +58,8 @@
  * Score Area 
    * Score area showing the sores to the users with the correct and incorrect score.
    * Score area also displaying the right answers to the users if they answered any question wrong.
+   * This page also has go back button which bring the user back to the first page.
+   <img width="1129" alt="score-area" src="https://user-images.githubusercontent.com/95220937/155178917-e463a921-ab61-4b87-92ac-16d6a5014388.png">
  * The Footer
    * The footer showing the social media link to the users.
    <img width="1107" alt="Social-media" src="https://user-images.githubusercontent.com/95220937/154839271-0c572ede-d788-4eca-9110-ece159c1f286.png">
@@ -84,14 +84,6 @@
     the devtools device toolbar.
   * I have also confirmed that all the button displaying are working properly.
 
-   [Back to top](#)
-
-  ## Bugs
-   ### solved bugs
-     * when I added the background image using position to the right in the website, 
-     * I found out that background image in the smaller devices was not displaying to the whole screen,
-     * Then I fixed the error by positioning the background image to the center.
-
  ## Validator Testing
    * HTML
      * No errors were returned when passing through the official [W3C validator](https://validator.w3.org).
@@ -110,8 +102,16 @@
 
    [Back to top](#)
 
+  ## Bugs
+   ### solved bugs
+     * when I added the background image using position to the right in the website, 
+     * I found out that background image in the smaller devices was not displaying to the whole screen,
+     * Then I fixed the error by positioning the background image to the center. 
+
  ## Unfixed Bugs
    * No unfixed bugs.
+   
+   [Back to top](#)
 
 # Colour
   * The background colour used is linear-gradient(to bottom, #00cc66 0%, #ffff99 100%).
