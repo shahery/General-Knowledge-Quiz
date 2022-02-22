@@ -99,7 +99,10 @@
 
    * Accessibilty
      * I confirmed that the colors and font chosen are easy to read and accessible by running it through lighthouse in    devtools.
+     * Generated report for desktop.
       <img width="1120" alt="report" src="https://user-images.githubusercontent.com/95220937/154937434-e65d287b-adf3-46c0-8ed7-7f96c723f8da.png">
+     * Generated report for mobile.
+     <img width="773" alt="report-mobile" src="https://user-images.githubusercontent.com/95220937/155236952-d2addb0c-7dfb-40be-8b15-7fcfa36e0334.png">
 
    [Back to top](#)
 
