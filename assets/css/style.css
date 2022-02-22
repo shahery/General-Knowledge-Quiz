@@ -47,24 +47,6 @@ body {
     text-align: center;
 }
 
-.btn{
-    height: 30px;
-    width: 100px;
-    background-color: lightgrey;
-    margin-top: 15px;
-}
-
-#back{
-    display: none;
-    margin-top: 30px;
-}
-
-.bn{
-    height: 50px;
-    width: 100px;
-    background-color: lightyellow;
-}
-
 .social-media{
     margin-top: 50px;
 }
@@ -87,11 +69,6 @@ label {
 
 #beginner-question{
     display: none;
-}
-
-#my-level-btn{
-    width: 80px;
-    height: 40px;
 }
 
 #intermediate-questions{
@@ -146,6 +123,24 @@ display: none;
 #advanced-question-btn{
     width: 80px;
     height: 40px;
+}
+
+#back{
+    display: none;
+    margin-top: 30px;
+}
+
+.btn{
+    height: 30px;
+    width: 100px;
+    background-color: lightgrey;
+    margin-top: 15px;
+}
+
+.bn{
+    height: 50px;
+    width: 100px;
+    background-color: lightyellow;
 }
   
 /* Media Queries */
