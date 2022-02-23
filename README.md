@@ -1,4 +1,6 @@
 # GeneralKnowledgeQuiz
+  <img width="1341" alt="Am-I-Responsive" src="https://user-images.githubusercontent.com/95220937/155358808-66218d51-8f69-41f0-892a-74fbc5b2a827.png">
+  The deployed link can be found here [GeneralKnowledgeQuiz](https://8000-shahery-generalknowledg-kpnksuw65rl.ws-eu33.gitpod.io/?)
 
 # About
   GeneralKnowledgeQuiz as the name describes is the quiz to test the general knowledge of the users. The quiz comes with the different levels like beginner, intermediate and advanced as difficulty level. Users can choose any level they want and enjoy testing their knowledge.
