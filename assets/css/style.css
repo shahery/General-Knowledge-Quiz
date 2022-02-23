@@ -74,11 +74,11 @@ label {
 }
 
 #intermediate-questions{
-display: none;
+    display: none;
 }
 
 #advanced-questions{
-display: none;
+    display: none;
 }
 
 /* score area */
