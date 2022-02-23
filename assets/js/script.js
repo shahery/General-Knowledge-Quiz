@@ -209,13 +209,11 @@ function submitAnswer (event) {
 
 function check(question){
     var radios = document.getElementsByName(question);
-
     for (var i = 0, len = radios.length; i < len; i++){
         if (radios[i].checked){
             return true;
         }
     }
-
     return false;
 }
 
