@@ -84,7 +84,6 @@ function showLevel(){
         let node = document.getElementById('beginner-question');
         node.style.display = 'block';
         
-
     }
     else if(level=="intermediate"){
         let node = document.getElementById('intermediate-questions');
@@ -152,8 +151,7 @@ function submitAnswer (event) {
              console.log(userAnswers[index]);        
             }
             beginnerSelected=true;
-        }
-        
+        }    
     }
     if(level=='intermediate'){
         if(drinkSelected && playersSelected && timesSelected && girlSelected && citySelected){
@@ -172,8 +170,7 @@ function submitAnswer (event) {
                 console.log(userAnswers[index]);        
             }
             intermediateSelected = true;
-        }
-        
+        }    
     }
     if(level=='advanced'){
         if(bodypartSelected && StateSelected && countrySelected && gameSelected && zoneSelected){
