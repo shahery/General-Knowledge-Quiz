@@ -140,7 +140,7 @@ label {
 }
 
 .bn{
-    height: 50px;
+    height: 30px;
     width: 100px;
     background-color: lightyellow;
 }
@@ -167,7 +167,7 @@ label {
     }
     .quiz{
         width: 90%;
-        height: 90vh;
+        height: 100vh;
     }
     .scores {
         padding: 5px;
