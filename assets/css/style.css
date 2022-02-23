@@ -147,29 +147,43 @@ label {
   
 /* Media Queries */
 
-/* for larger to medium screen size from 950px wide and open */
-@media screen and (max-width: 950px){
+/* for larger to medium screen size from 1024px wide and down */
+@media screen and (max-width: 1024px){
     .quiz{
         width: 90%;
         height: 90vh;
-        font-size: large;
+        font-size: x-large;
     }
     .scores {
         padding: 10px;
     }
 }
 
-/* for medium screen size from 600px wide and open */
-@media screen and (max-width: 600px){
+/* for medium screen size from 700px wide and down */
+@media screen and (max-width: 700px){
     .heading {
         text-align: center;
         font-size: 1.5rem;
     }
     .quiz{
         width: 90%;
-        height: 100vh;
+        height: 80vh;
+        font-size: large;
     }
     .scores {
         padding: 5px;
     }
+}
+
+/* for small screen sizes from 460px wide and down */
+@media screen and (max-width: 460px) {
+    .heading {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .quiz{
+        width: 90%;
+        height: 110vh;
+    }
+
 }
