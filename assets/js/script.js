@@ -114,7 +114,6 @@ function submitAnswer (event) {
     let box = document.getElementsByClassName('quiz')[0];
     box.style.height = '185vh';
 
-
     var capitalSelected = check('capital');
     var planetSelected = check('planet');
     var currencySelected = check('currency');
@@ -239,7 +238,7 @@ const advancedAnswers = ["4","Knee","Tennessee","China","Call-of-Duty"];
 
 /**
  * Checks the answer compare to userAnswer in
- * the returned calculateCorrectAnswer array
+ * the returned CorrectAnswer array
  * If the answer is incorrect it will give the alert with mistakes and right answers.
  * It also increment the score and incorrect answers.
 */
