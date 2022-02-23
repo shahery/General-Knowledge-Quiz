@@ -48,7 +48,7 @@ let level;
  * This function is used to select the level.
  * It also gives the alert message if user does not select any level.
  * @param {*} event a parameter that stores the click event value.
- */
+*/
 
 function selectLevel (event) {
     if(document.getElementById('intermediate').checked || document.getElementById('beginner').checked || document.getElementById('advanced').checked){
@@ -205,7 +205,7 @@ function submitAnswer (event) {
  * This check function code below was taken from stackoverflow.
  * @param {*} question 
  * @returns 
- */
+*/
 
 function check(question){
     var radios = document.getElementsByName(question);
@@ -311,7 +311,5 @@ function showResult(){
 
     function goBack(){
         history.go();
-     console.log(goBack);
     }
-
 }
